@@ -1,19 +1,17 @@
+
 window.onload = function () {
-    fetch("https://api.allorigins.win/raw?url=https://zenquotes.io/api/random")
+    fetch("https://api.quotable.io/random")
         .then(response => response.json())
         .then(data => {
-            const quoteData = data[0];
-            const quote = quoteData.q;
-            const author = quoteData.a;
+            const quoteText = data.content;
+            const quoteAuthor = data.author;
 
-            const quoteElement = document.getElementById('quote');
-
-            quoteElement.textContent = `"${quote}" - ${author}`;
+            const quoteElement = document.getElementById("quote");
+            quoteElement.textContent = `"${quoteText}"— ${quoteAuthor}`;
         })
         .catch(error => {
-            console.error('Error fetching quote:', error);
-            const quoteElement = document.getElementById('quote');
+            console.error("Error fetching quote:", error);
+            const quoteElement = document.getElementById("quote");
             quoteElement.textContent = "Failed to load quote. Please try again later.";
-
         });
 };
