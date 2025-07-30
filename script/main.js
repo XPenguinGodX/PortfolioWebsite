@@ -1,5 +1,5 @@
 window.onload = function () {
-    fetch("https://zenquotes.io/api/random")
+    fetch("https://api.allorigins.win/raw?url=https://zenquotes.io/api/random")
         .then(response => response.json())
         .then(data => {
             const quoteData = data[0];
