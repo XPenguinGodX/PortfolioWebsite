@@ -1,5 +1,13 @@
 img {
-    width: 200px;
+  width: 200px;
+}
+
+.skills-icon {
+  width: 300px;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+  align-self: center;
 }
 
 body {
@@ -65,12 +73,14 @@ table {
   margin-top: 20px;
 }
 
-th, td {
+th,
+td {
   border: 1px solid #2917cc;
   padding: 8px;
   text-align: center;
 }
 
+/*Quote Generator*/
 .about-container {
   display: flex;
   align-items: center;
@@ -87,6 +97,60 @@ th, td {
   background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
+}
+
+/* Slideshow */
+#slideshow {
+  position: relative;
+  overflow: hidden;
+  max-width: 600px;
+  /* adjust if you like */
+  margin: 0 auto 2rem;
+}
+
+#slideshow img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Slideshow Text */
+.hero-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1000px;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+
+/* Allow each card to shrink-and-grow */
+.hero-row .card {
+  flex: 1 1 300px;
+}
+
+
+@media (max-width: 600px) {
+  .hero-row {
+    flex-direction: column;
+  }
+}
+
+.center-img{
+  display:block;
+  margin:0 auto;
+  max-width:90%;
 }
