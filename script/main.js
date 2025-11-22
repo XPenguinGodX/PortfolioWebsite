@@ -40,4 +40,26 @@ window.onload = function () {
     // kick off the slideshow after the page is fully loaded
     window.addEventListener("load", () => {
         setInterval(changeSlide, slideDelay);
+    })
+    const themeSheet = document.getElementById("themeStylesheet");
+    
+    const cycleBtn = document.getElementById("backgroundChange");
+
+    // Add your theme CSS files here
+    const themes = [
+        "css/secondStyle.css",
+        "css/styles.css",
+        "css/theme-penguin.css",
+        "css/theme-nasa.css",
+        "css/theme-medieval.css",
+        "css/theme-neon.css"
+    ];
+
+    let currentIndex = 0;
+
+    cycleBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % themes.length;
+        themeSheet.href = themes[currentIndex];
     });
+
+    ;

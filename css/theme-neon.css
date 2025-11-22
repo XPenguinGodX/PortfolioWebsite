@@ -1,0 +1,70 @@
+/* ======================
+   NEON TECH THEME
+   ====================== */
+
+body {
+    background: linear-gradient(135deg, #0a001f, #001f3f);
+    color: #e0e8ff;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+header, nav {
+    background: #0d0030;
+    padding: 25px;
+    /*text-align: center;*/
+    border-bottom: 4px solid #7b2ff7;
+    box-shadow: 0 0 20px #7b2ff7;
+}
+
+nav a {
+    color: #b88cff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #b88cff;
+    color: #0d0030;
+}
+
+/* PAGE */
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 25px #7b2ff760;
+}
+
+/* BUTTON */
+#themeCycle {
+    background: #7b2ff7;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#themeCycle:hover {
+    background: #e09aff;
+}
+
+/* PROFILE IMAGE */
+img.profile {
+    width: 210px;
+    border-radius: 20px;
+    border: 4px solid #b88cff;
+    box-shadow: 0 0 25px #7b2ff7;
+}
