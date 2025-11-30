@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>My Skills | Francisco Perez</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  
+    <meta charset="UTF-8" />
+    <title>My Skills | Francisco Perez</title>
+    <link rel="stylesheet" href="css/styles.css" />
+
 </head>
+
 <body>
-  
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="interests.html">Experience</a></li>
-        <li><a href="favorites.html">Resources</a></li>
-        <li><a href="plans.html">Future Plans</a></li>
-        <li><a href="skills.html" class="active">My Skills</a></li>
-        <li><a href="projects.html">My Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section>
-    <h1>Technical Proficiency</h1>
-    <p>Here are the technologies and tools I’m utilizing at Neumont, ranging from backend development to database management.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="interests.html">Experience</a></li>
+                <li><a href="favorites.html">Resources</a></li>
+                <li><a href="plans.html">Future Plans</a></li>
+                <li><a href="skills.html" class="active">My Skills</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <button id="music-btn">
+                    Play Music 🐧
+                </button>
+                <audio id="bg-music" loop>
+                    <source src="music/song.mp3" type="audio/mpeg">
+                </audio>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="skills-container">
-        
-        <div class="skill-category">
-            <h3>Languages</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">C++</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag learning">JavaScript (Basic)</span>
-                <span class="skill-tag learning">HTML & CSS</span>
+    <section>
+        <h1>Technical Proficiency</h1>
+        <p>Here are the technologies and tools I’m utilizing at Neumont, ranging from backend development to database
+            management.</p>
+
+        <div class="skills-container">
+
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag learning">JavaScript (Basic)</span>
+                    <span class="skill-tag learning">HTML & CSS</span>
+                </div>
             </div>
-        </div>
 
-        <div class="skill-category">
-            <h3>Databases</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">MySQL</span>
-                <span class="skill-tag">SQL Server (SSMS)</span>
-                <span class="skill-tag">Redis</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag learning">Neo4j</span>
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">SQL Server (SSMS)</span>
+                    <span class="skill-tag">Redis</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag learning">Neo4j</span>
+                </div>
             </div>
-        </div>
 
-        <div class="skill-category">
-            <h3>Tools & Environment</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">IntelliJ IDEA</span>
-                <span class="skill-tag">VS Code</span>
-                <span class="skill-tag">Git & GitHub</span>
-                <span class="skill-tag">Docker</span>
+            <div class="skill-category">
+                <h3>Tools & Environment</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">IntelliJ IDEA</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Docker</span>
+                </div>
             </div>
-        </div>
 
-        <div class="skill-category">
-            <h3>Key Concepts</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Object Oriented Programming</span>
-                <span class="skill-tag">Database Normalization (3NF)</span>
-                <span class="skill-tag">Unit Testing</span>
-                <span class="skill-tag">Regex</span>
+            <div class="skill-category">
+                <h3>Key Concepts</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Object Oriented Programming</span>
+                    <span class="skill-tag">Database Normalization (3NF)</span>
+                    <span class="skill-tag">Unit Testing</span>
+                    <span class="skill-tag">Regex</span>
+                </div>
             </div>
+
+            <div class="skill-category" style="border-color: #0055a5;">
+                <h3 style="color: #0055a5;">Professional Skills</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag" style="background-color: #444;">Team Collaboration</span>
+                    <span class="skill-tag" style="background-color: #444;">Problem Solving</span>
+                    <span class="skill-tag" style="background-color: #444;">Adaptability</span>
+                    <span class="skill-tag" style="background-color: #444;">Technical Writing</span>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-  </section>
+    <section class="industry-research"
+        style="margin-top: 40px; background-color: #f0f4f8; padding: 20px; border-radius: 8px;">
+        <h2>Industry Relevance</h2>
+        <p>My technical focus is grounded in current industry data to ensure market readiness.</p>
 
- <img src="images/skills.png" class="center-img" alt="Polygon penguin artwork">
+        <ul style="line-height: 1.6; list-style-type: square; margin-left: 20px;">
+            <li>
+                <strong>High Demand:</strong> According to the <em>Bureau of Labor Statistics</em> (2024), employment
+                for software developers is projected to grow <strong>25%</strong> through 2032.
+            </li>
+            <li>
+                <strong>Database Dominance:</strong> I prioritize SQL because the <em>Stack Overflow Developer
+                    Survey</em> (2024) consistently ranks it as a top requirement for backend engineers.
+            </li>
+            <li>
+                <strong>Enterprise Stability:</strong> Java remains a critical enterprise skill, ranked #4 globally in
+                the <em>TIOBE Index</em> (2025).
+            </li>
+        </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2024 Francisco Perez — ALL RIGHTS RESERVED</p>
-  </footer>
+    <img src="images/skills.png" class="center-img" alt="Polygon penguin artwork">
+
+    <footer>
+        <p>&copy; 2024 Francisco Perez — ALL RIGHTS RESERVED</p>
+
+        <script src="script/main.js"></script>
+    </footer>
 </body>
-</html>

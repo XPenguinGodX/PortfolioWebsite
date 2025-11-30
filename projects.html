@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <title>My Projects | Francisco Perez</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
-  
+
   <header>
     <nav>
       <ul>
@@ -17,11 +19,17 @@
         <li><a href="skills.html">My Skills</a></li>
         <li><a href="projects.html" class="active">My Projects</a></li>
         <li><a href="contact.html" class="active">Contact</a></li>
+        <button id="music-btn">
+          Play Music 🐧
+        </button>
+        <audio id="bg-music" loop>
+          <source src="music/song.mp3" type="audio/mpeg">
+        </audio>
       </ul>
     </nav>
   </header>
 
- 
+
   <section>
     <h1>Projects I’m Proud Of</h1>
 
@@ -39,7 +47,8 @@
 
     <article class="project-card">
       <h2>Wonderful Weather Widget</h2>
-      <p>A two-page JavaScript app that fetches OpenWeatherMap API data to display today’s weather plus a 5-day forecast.</p>
+      <p>A two-page JavaScript app that fetches OpenWeatherMap API data to display today’s weather plus a 5-day
+        forecast.</p>
       <ul>
         <li>Async fetch with graceful loading states</li>
         <li>LocalStorage remembers last searched city</li>
@@ -51,7 +60,7 @@
     <article class="project-card">
       <h2>WIRMS "Workplace Incident Report Management System"</h2>
       <p>This was a Local java program created by a team of 4, It has a SSMS database and UI was designed in JavaFX.
-         This was created in under 5 weeks which was the timeline given.</p>
+        This was created in under 5 weeks which was the timeline given.</p>
       <ul>
         <li>Implemented complex SQL queries for data retrieval and reporting</li>
         <li>Designed intuitive JavaFX UI for seamless user experience</li>
@@ -59,11 +68,12 @@
       </ul>
     </article>
 
-   
-  </section>
 
+  </section>
+  <script src="script/main.js"></script>
   <footer>
     <p>&copy; 2025 Francisco Perez — ALL RIGHTS RESERVED</p>
   </footer>
 </body>
+
 </html>

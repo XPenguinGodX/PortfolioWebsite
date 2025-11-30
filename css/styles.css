@@ -232,4 +232,12 @@ td {
         box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds a cool shadow */
     }
 
+    .music-btn{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px;
+        z-index: 1000;
+    }
+
 
