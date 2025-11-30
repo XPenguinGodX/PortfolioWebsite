@@ -16,6 +16,8 @@ window.onload = function () {
         });
 
     };
+
+
     const slideImg = document.getElementById("slideImage");
     const slidePaths = [
         "images/crystalPenguin.png",
@@ -61,5 +63,31 @@ window.onload = function () {
         currentIndex = (currentIndex + 1) % themes.length;
         themeSheet.href = themes[currentIndex];
     });
+
+    document.getElementById("backgroundChange").addEventListener("click", () => {
+    for (let i = 0; i < 20; i++) {
+        createPenguin();
+    }
+});
+
+function createPenguin() {
+    const penguin = document.createElement("div");
+    penguin.classList.add("penguin");
+    penguin.textContent = "🐧";
+
+    // random horizontal starting position
+    const x = Math.random() * window.innerWidth;
+    // random slight size variations
+    penguin.style.fontSize = (20 + Math.random() * 10) + "px";
+    penguin.style.left = x + "px";
+
+    document.body.appendChild(penguin);
+
+    // remove after animation
+    setTimeout(() => {
+        penguin.remove();
+    }, 1500);
+}
+
 
     ;

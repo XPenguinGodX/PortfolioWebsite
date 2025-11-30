@@ -8,7 +8,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffffff;
+  color: black;
 }
 
 
@@ -46,6 +46,26 @@ nav a {
   transition: background 0.3s ease;
 }
 
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-container img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.quote {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
 nav a:hover {
   background-color: #FF4500;
 }
@@ -55,17 +75,17 @@ section {
   width: 90%;
   margin: 20px auto;
   padding: 30px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(92, 85, 85, 0.7);
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
+img.profile {
+    width: 200px;
+    border-radius: 8px;
+    border: 3px solid #8B0000;
+    box-shadow: 0 0 25px #660000;
 }
 
 
@@ -105,4 +125,24 @@ th, td {
 a {
   color: #00ffff;
   text-shadow: 1px 1px 2px black;
+}
+.penguin {
+  position: fixed;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  user-select: none;
+  z-index: 9999;
+  animation: fall 1.5s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(300px) rotate(720deg);
+    opacity: 0;
+  }
 }
